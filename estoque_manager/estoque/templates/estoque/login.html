@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form method="post">
+        {% csrf_token %}  <!-- Protege contra CSRF -->
+        {{ form.as_p }}  <!-- Renderiza o formulário como parágrafos -->
+        <button type="submit">Entrar</button>
+    </form>
+    <a href="{% url 'cadastro' %}">Cadastrar-se</a>  <!-- Link para a página de cadastro -->
+</body>
+</html>

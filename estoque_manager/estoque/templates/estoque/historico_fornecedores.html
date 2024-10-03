@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Histórico de Fornecedores</title>
+</head>
+<body>
+    <h1>Histórico de Fornecedores</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Email</th>
+        </tr>
+        {% for fornecedor in fornecedores %}
+        <tr>
+            <td>{{ fornecedor.id }}</td>
+            <td>{{ fornecedor.nome }}</td>
+            <td>{{ fornecedor.email }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="{% url 'cadastro_fornecedor' %}">Cadastrar Fornecedor</a>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial - Gerenciador de Estoque</title>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Gerenciador de Estoque</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="{% url 'cadastro' %}">Cadastro</a></li>
+            <li><a href="{% url 'login' %}">Login</a></li>
+            <li><a href="{% url 'produtos' %}">Produtos</a></li>
+            <li><a href="{% url 'historico_fornecedores' %}">Fornecedores</a></li>
+            <li><a href="{% url 'relatorios' %}">Relatórios</a></li>
+        </ul>
+    </nav>
+    
+    <footer>
+        <p>&copy; 2024 Gerenciador de Estoque. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
